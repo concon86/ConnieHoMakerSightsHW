@@ -58,6 +58,20 @@
     padding: 30px;
     width: 100%;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    .chart-wrap {
+      background: lightgray;
+      border-radius: 10px;
+    }
+
+    span {
+      display: block;
+      background: green;
+      height: 10px;
+      border-radius: 10px;
+    }
 
   }
   .profile {

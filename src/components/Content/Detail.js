@@ -15,9 +15,9 @@ export const Detail = ({ item }) => {
       </div>
       {item?.scores ?
         <div className="chart detail-content">
-          <div className="kindness">Kindness {item?.scores?.kindness}</div>
-          <div className="activity">Activity {item?.scores?.activity}</div>
-          <div className="health">Health {item?.scores?.healthy}</div>
+          <div className="kindness">Kindness <div className="chart-wrap"><span style={{ width: `${item?.scores?.kindness}%` }}></span></div></div>
+          <div className="activity">Activity <div className="chart-wrap"> <span style={{ width: `${item?.scores?.activity}%` }}></span></div></div>
+          <div className="health">Health <div className="chart-wrap"><span style={{ width: `${item?.scores?.healthy}%` }}></span></div></div>
         </div>
         : null}
     </div>)

@@ -17,7 +17,7 @@ export const Search = () => {
   return (
     <form onSubmit={(ev) => onSubmit(ev)}>
       <fieldset>
-        <input onChange={(ev) => onChange(ev)} ref={inputRef} type="text" name="name" placeholder="Name" />
+        <input onChange={(ev) => onChange(ev)} ref={inputRef} type="text" name="name" placeholder="Search..." />
       </fieldset>
     </form>
   )
